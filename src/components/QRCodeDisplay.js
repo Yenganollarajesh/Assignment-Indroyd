@@ -2,14 +2,15 @@ import React from 'react';
 import { QRCodeCanvas } from 'qrcode.react';
 
 const QRCodeDisplay = () => {
-  const localIP = "http://192.168.29.186:3000";
+  const deployedURL = " https://yenganollarajesh.github.io/Assignment-Indroyd/";
   return (
     <div>
-      <QRCodeCanvas value={localIP} />
+      <QRCodeCanvas value={deployedURL} />
       <p>Scan the QR code to join the game on your mobile device.</p>
     </div>
   );
 };
 
 export default QRCodeDisplay;
+
 
